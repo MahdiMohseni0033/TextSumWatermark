@@ -38,7 +38,7 @@ def plot_pairplot_and_save(df, save_path):
 if __name__ == '__main__':
     ignore_future_warnings()
     # Read the CSV file
-    df = pd.read_csv('result.csv')
+    df = pd.read_csv('../result.csv')
 
     # Handle missing values: Remove rows with NaN values
     df.dropna(inplace=True)

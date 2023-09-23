@@ -87,8 +87,4 @@ The detector can be configured with:
 See the paper for detailed discussion of settings and their effect on generation quality and detection accuracy.
 
 
-## Contact
 
-If you have any questions or comments about this project, please don't hesitate to contact us:
-
-Email: [mahdimohseni0333@gmail.com](mailto:mahdimohseni0333@gmail.com)
