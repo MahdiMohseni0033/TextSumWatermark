@@ -7,17 +7,20 @@ Welcome to the TextSumWatermark repository, dedicated to watermarking large lang
 ### Here's an overview of the recent additions and improvements to our codebase:
 
 
-- We have expanded our codebase to accommodate summarization models such as T5 and Flan, in addition to just decoder models.
-- We've introduced evaluation capabilities, allowing you to assess different models performance on datasets like CNN_DailyMail and Xsum seamlessly.
+- We have expanded our codebase to accommodate summarization models such as **T5** and **Flan**, in addition to just decoder models.
+- We've introduced evaluation capabilities, allowing you to assess different models performance on datasets like **CNN_DailyMail** and **Xsum** seamlessly.
 - We've integrated a Gradio demo with the latest models.
 - To provide a deeper understanding of the watermarking approach, we've added a script to generate statistical result plots.
 
 ***
 ## Overview
 
-[//]: # (https://github.com/MahdiMohseni0033/TextSumWatermark.git/images/Demo_image.png)
 
-[//]: # (![Example Image]&#40;https://github.com/yourusername/yourrepository/raw/main/path/to/your/image.png&#41;)
+
+[//]: # (![Demo Image]&#40;https://github.com/MahdiMohseni0033/TextSumWatermark/blob/main/images/Demo_image.png&#41;)
+
+![model_explain1](.asset/Demo_image.PNG)
+
 The core idea is to insert a subtle but detectable watermark into the generations of a language model. This is done by biasing the model's next token predictions during generation towards a small "greenlist" of candidate tokens determined by the prefix context. The watermark detector then analyzes text and checks if an abnormally high fraction of tokens fall within these expected greenlists, allowing it to distinguish watermarked text from human-written text.
 
 ## Contents
