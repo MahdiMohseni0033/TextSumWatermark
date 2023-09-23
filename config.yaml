@@ -1,0 +1,27 @@
+run_gradio: False
+demo_public: False
+model_name_or_path: facebook/opt-125m
+#model_name_or_path: google/flan-t5-large
+#model_name_or_path: google/flan-t5-large
+#model_name_or_path: google/flan-t5-large
+#model_name_or_path: google/flan-t5-large
+#model_name_or_path: google/flan-t5-large
+
+load_fp16: False
+prompt_max_length: null
+max_new_tokens: 500
+generation_seed: 123
+use_sampling: True
+n_beams: 1
+sampling_temp: 0.7
+use_gpu: True
+seeding_scheme: simple_1
+gamma: 0.25
+delta: 2.0
+normalizers: ''
+ignore_repeated_bigrams: False
+detection_z_threshold: 4.0
+select_green_tokens: True
+skip_model_load: False
+seed_separately: True
+output_path: ./
