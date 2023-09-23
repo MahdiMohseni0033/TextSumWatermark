@@ -1,11 +1,18 @@
-run_gradio: False
+run_gradio: True
 demo_public: False
-model_name_or_path: facebook/opt-125m
-#model_name_or_path: google/flan-t5-large
-#model_name_or_path: google/flan-t5-large
-#model_name_or_path: google/flan-t5-large
-#model_name_or_path: google/flan-t5-large
-#model_name_or_path: google/flan-t5-large
+
+# select what dataset are you going to use. choices -- > ( xsum, ccdv/cnn_dailymail )
+dataset_name_or_path: ccdv/cnn_dailymail
+
+# select which part of split dataset going to use. choices -- > ( train, valid, test )
+dataset_section: test
+
+# How many data  are you planning to evaluate -- > an integer number
+limit_dataset: 500
+
+# Which model do you plan to use --> (facebook/opt-125m, google/flan-t5-base, google/flan-t5-large, t5-base, t5-large )
+
+model_name_or_path: t5-large
 
 load_fp16: False
 prompt_max_length: null
@@ -24,4 +31,4 @@ detection_z_threshold: 4.0
 select_green_tokens: True
 skip_model_load: False
 seed_separately: True
-output_path: ./
+csv_path: ./result.csv
