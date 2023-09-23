@@ -15,6 +15,9 @@ Welcome to the TextSumWatermark repository, dedicated to watermarking large lang
 ***
 ## Overview
 
+[//]: # (https://github.com/MahdiMohseni0033/TextSumWatermark.git/images/Demo_image.png)
+
+[//]: # (![Example Image]&#40;https://github.com/yourusername/yourrepository/raw/main/path/to/your/image.png&#41;)
 The core idea is to insert a subtle but detectable watermark into the generations of a language model. This is done by biasing the model's next token predictions during generation towards a small "greenlist" of candidate tokens determined by the prefix context. The watermark detector then analyzes text and checks if an abnormally high fraction of tokens fall within these expected greenlists, allowing it to distinguish watermarked text from human-written text.
 
 ## Contents

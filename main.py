@@ -3,7 +3,7 @@ import pandas as pd
 from argparse import Namespace
 from tqdm import tqdm
 import warnings
-from utils import load_model, prepare_dataset, generate, detect
+from utils.utils import load_model, prepare_dataset, generate, detect
 
 # Ignore all future warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)

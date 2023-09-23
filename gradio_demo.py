@@ -1,6 +1,9 @@
 from argparse import Namespace
+from utils.demo_watermark import main
 import yaml
-
+import warnings
+# Ignore all future warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 def load_config(file_path):
     """
@@ -15,8 +18,6 @@ def load_config(file_path):
     with open(file_path, 'r') as f:
         return yaml.safe_load(f)
 
-
-from demo_watermark import main
 
 if __name__ == '__main__':
     # Path to the YAML configuration file
