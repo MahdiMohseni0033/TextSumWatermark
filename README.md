@@ -13,13 +13,8 @@ Welcome to the TextSumWatermark repository, dedicated to watermarking large lang
 - To provide a deeper understanding of the watermarking approach, we've added a script to generate statistical result plots.
 
 ***
-## Overview
-
-
-
-[//]: # (![Demo Image]&#40;https://github.com/MahdiMohseni0033/TextSumWatermark/blob/main/images/Demo_image.png&#41;)
-
-![model_explain1](.asset/Demo_image.PNG)
+## Demo
+![model_explain1](.asset/Demo_image.png)
 
 The core idea is to insert a subtle but detectable watermark into the generations of a language model. This is done by biasing the model's next token predictions during generation towards a small "greenlist" of candidate tokens determined by the prefix context. The watermark detector then analyzes text and checks if an abnormally high fraction of tokens fall within these expected greenlists, allowing it to distinguish watermarked text from human-written text.
 
